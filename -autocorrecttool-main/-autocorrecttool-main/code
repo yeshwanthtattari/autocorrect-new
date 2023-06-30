@@ -1,0 +1,7 @@
+!pip install textblob
+from textblob import TextBlob
+
+a = input("enter text: ")
+print("orignal text : "+ str(a))
+b = TextBlob(a)
+print("correct Text : "+ str(b.correct()))
